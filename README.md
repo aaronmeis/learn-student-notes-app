@@ -1,4 +1,4 @@
-# Student Notes App
+# Student Notes Mobile App
 
 An Android app for taking notes with AI-powered features using local LLM inference via Ollama.
 
