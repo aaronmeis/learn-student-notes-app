@@ -2,6 +2,9 @@
 
 This document describes the overall architecture of the Student Notes app.
 
+
+![overview](./architecture.png)
+
 ## Overview
 
 The app follows **MVVM (Model-View-ViewModel)** architecture with a clean separation of concerns:
