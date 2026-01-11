@@ -2,6 +2,9 @@
 
 This document describes the Room database schema for the Student Notes app.
 
+
+![overview](./database.png)
+
 ## Overview
 
 The app uses Room (SQLite) for local persistence with two main entities:
