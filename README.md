@@ -103,7 +103,57 @@ student-notes-app/
 
 ## Setup (New Machine)
 
-### 1. Install Java 17
+### 1. Install Android Studio
+
+**macOS:**
+1. Download Android Studio from [developer.android.com/studio](https://developer.android.com/studio)
+2. Open the `.dmg` file and drag Android Studio to Applications
+3. Launch Android Studio and complete the setup wizard
+4. The wizard will automatically download and install:
+   - Android SDK (API level 34)
+   - Android SDK Platform-Tools
+   - Android SDK Build-Tools
+   - Android Emulator (optional but recommended)
+
+**Linux:**
+```bash
+# Download and extract Android Studio
+wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2023.1.1.28/android-studio-2023.1.1.28-linux.tar.gz
+tar -xzf android-studio-*.tar.gz
+cd android-studio/bin
+./studio.sh
+```
+
+**Windows:**
+1. Download Android Studio from [developer.android.com/studio](https://developer.android.com/studio)
+2. Run the installer and follow the setup wizard
+3. The wizard will install Android SDK automatically
+
+**Verify Android SDK Installation:**
+After Android Studio setup, verify the SDK location:
+- **macOS**: `~/Library/Android/sdk` or `/Users/YOUR_USERNAME/Library/Android/sdk`
+- **Linux**: `~/Android/Sdk`
+- **Windows**: `%LOCALAPPDATA%\Android\Sdk`
+
+**Configure SDK Path:**
+Run the setup script to automatically detect and configure the SDK path:
+```bash
+./setup-android-sdk.sh
+```
+
+Or manually update `local.properties` in the project root:
+```properties
+sdk.dir=/Users/YOUR_USERNAME/Library/Android/sdk
+```
+
+**Required SDK Components:**
+Ensure the following are installed via Android Studio's SDK Manager:
+- Android SDK Platform 34
+- Android SDK Build-Tools 34.0.0 or later
+- Android SDK Platform-Tools
+- Android Emulator (for testing)
+
+### 2. Install Java 17
 
 **macOS:**
 ```bash
@@ -165,16 +215,20 @@ Verify it's working:
 ollama run qwen2.5:0.5b "Hello"
 ```
 
-### 4. Clone and Open the Project
+### 4. Clone and Configure the Project
 
 ```bash
 git clone <repository-url>
 cd student-notes-app
+
+# Configure Android SDK path (if not done automatically)
+./setup-android-sdk.sh
 ```
 
 Open the project in Android Studio:
 - File → Open → Select the `student-notes-app` folder
 - Wait for Gradle sync to complete
+- If prompted, accept the Gradle wrapper download
 
 ### 5. Run the App
 
