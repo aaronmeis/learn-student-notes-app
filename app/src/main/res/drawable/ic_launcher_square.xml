@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Blue background -->
+    <path
+        android:fillColor="#1976D2"
+        android:pathData="M0,0h48v48H0z"/>
+    <!-- White notepad -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,8h24c1.1,0 2,0.9 2,2v28c0,1.1 -0.9,2 -2,2H12c-1.1,0 -2,-0.9 -2,-2V10c0,-1.1 0.9,-2 2,-2z"/>
+    <!-- Lines -->
+    <path
+        android:fillColor="#90CAF9"
+        android:pathData="M14,16h20v2H14zM14,22h20v2H14zM14,28h14v2H14z"/>
+</vector>
