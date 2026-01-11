@@ -2,6 +2,8 @@
 
 This document covers the testing setup, test structure, and how to run tests for the Student Notes App.
 
+![overview](./testing.png)
+
 ## Test Dependencies
 
 | Dependency | Version | Purpose |
