@@ -12,6 +12,8 @@ quantization strategy: dynamic quantization based on device capabilities. 4-bit 
 battery optimization: batch inference requests to reduce wake cycles. throttle model calls during low battery mode. defer non-critical processing until charging.
 offline-first sync: store user data locally in encrypted format. sync to cloud only when connected and with user permission. conflict resolution prioritizes local changes.
 
+![overview](./overview.png)
+
 
 ## Feature Status
 
